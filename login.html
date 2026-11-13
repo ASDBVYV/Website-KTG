@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sign In — Kamil Ticket Global</title>
+<meta name="theme-color" content="#3b55c9">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="login" data-header="minimal" data-title-key="nav.signin" class="auth-page">
+<div id="app-header"></div>
+<main class="auth-main">
+  <div class="container">
+    <div class="auth-card">
+      <div class="photo"><img src="assets/plane.jpg" alt="Airplane at the gate" style="object-position:50% 55%"></div>
+      <div class="panel">
+
+        <!-- Sign in -->
+        <form id="signinForm" novalidate>
+          <h1 data-i18n="auth.welcome"></h1>
+          <p class="sub" data-i18n="auth.sub"></p>
+          <div class="alert info" id="needMsg" hidden><i data-icon="info"></i><span data-i18n="auth.needlogin"></span></div>
+          <div class="alert error" id="siErr" hidden><i data-icon="info"></i><span></span></div>
+          <div class="field"><label for="siEmail" data-i18n="auth.email"></label>
+            <div class="input"><i data-icon="mail"></i><input id="siEmail" type="email" autocomplete="email" data-i18n-ph="auth.email.ph"></div><span class="err" id="siEmailE"></span></div>
+          <div class="field"><label for="siPass" data-i18n="auth.pass"></label>
+            <div class="input"><i data-icon="lock"></i><input id="siPass" type="password" autocomplete="current-password" data-i18n-ph="auth.pass.ph"></div><span class="err" id="siPassE"></span></div>
+          <div class="row"><label class="check"><input type="checkbox" id="siRemember" checked><span data-i18n="auth.remember"></span></label>
+            <button type="button" class="link-btn" id="toForgot" data-i18n="auth.forgot"></button></div>
+          <button class="btn btn-primary btn-block" type="submit"><span data-i18n="auth.signin"></span><i data-icon="arrow-right"></i></button>
+          <div class="divider" data-i18n="auth.or"></div>
+          <button type="button" class="google-btn" id="googleBtn"><span data-icon="google"></span><span data-i18n="auth.google"></span></button>
+          <p class="switch"><span data-i18n="auth.noacc"></span> <button type="button" class="link-btn" id="toSignup" data-i18n="auth.signup"></button></p>
+        </form>
+
+        <!-- Sign up -->
+        <form id="signupForm" novalidate hidden>
+          <h1 data-i18n="auth.create"></h1>
+          <p class="sub" data-i18n="auth.create.sub"></p>
+          <div class="alert error" id="suErr" hidden><i data-icon="info"></i><span></span></div>
+          <div class="field"><label for="suName" data-i18n="auth.name"></label>
+            <div class="input"><i data-icon="user"></i><input id="suName" autocomplete="name" data-i18n-ph="auth.name.ph"></div><span class="err" id="suNameE"></span></div>
+          <div class="field"><label for="suEmail" data-i18n="auth.email"></label>
+            <div class="input"><i data-icon="mail"></i><input id="suEmail" type="email" autocomplete="email" data-i18n-ph="auth.email.ph"></div><span class="err" id="suEmailE"></span></div>
+          <div class="field"><label for="suPhone" data-i18n="auth.phone"></label>
+            <div class="input"><i data-icon="phone"></i><input id="suPhone" type="tel" autocomplete="tel" data-i18n-ph="auth.phone.ph"></div><span class="err" id="suPhoneE"></span></div>
+          <div class="field"><label for="suPass" data-i18n="auth.pass"></label>
+            <div class="input"><i data-icon="lock"></i><input id="suPass" type="password" autocomplete="new-password" data-i18n-ph="auth.pass.new"></div><span class="err" id="suPassE"></span></div>
+          <button class="btn btn-primary btn-block" type="submit"><span data-i18n="auth.signup.btn"></span><i data-icon="arrow-right"></i></button>
+          <div class="divider" data-i18n="auth.or"></div>
+          <button type="button" class="google-btn" data-google><span data-icon="google"></span><span data-i18n="auth.google"></span></button>
+          <p class="switch"><span data-i18n="auth.haveacc"></span> <button type="button" class="link-btn" data-to-signin data-i18n="auth.signin"></button></p>
+        </form>
+
+        <!-- Forgot -->
+        <form id="forgotForm" novalidate hidden>
+          <h1 data-i18n="auth.forgot.h"></h1>
+          <p class="sub" data-i18n="auth.forgot.p"></p>
+          <div class="alert ok" id="fgOk" hidden><i data-icon="circle-check"></i><span data-i18n="auth.forgot.sent"></span></div>
+          <div class="field"><label for="fgEmail" data-i18n="auth.email"></label>
+            <div class="input"><i data-icon="mail"></i><input id="fgEmail" type="email" data-i18n-ph="auth.email.ph"></div><span class="err" id="fgEmailE"></span></div>
+          <button class="btn btn-primary btn-block" type="submit"><span data-i18n="auth.forgot.btn"></span></button>
+          <p class="switch"><button type="button" class="link-btn" data-to-signin data-i18n="auth.forgot.back"></button></p>
+        </form>
+      </div>
+    </div>
+    <div class="trust auth-trust">
+      <div class="trust-item"><span class="trust-ico"><i data-icon="circle-check"></i></span><div><b data-i18n="trust.secure"></b><span data-i18n="trust.secure.d"></span></div></div>
+      <div class="trust-item"><span class="trust-ico"><i data-icon="circle-check"></i></span><div><b data-i18n="trust.price"></b><span data-i18n="trust.price.d"></span></div></div>
+      <div class="trust-item"><span class="trust-ico"><i data-icon="circle-check"></i></span><div><b data-i18n="trust.support"></b><span data-i18n="trust.support.d"></span></div></div>
+    </div>
+  </div>
+</main>
+<script src="assets/i18n.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/auth.js"></script>
+</body>
+</html>

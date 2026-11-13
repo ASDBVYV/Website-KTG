@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kamil Ticket Global</title>
+<meta name="description" content="Book Jakarta (CGK) to Jeddah (JED) flights with Saudia, Garuda Indonesia and Lion Air — Kamil Ticket Globalindo.">
+<meta name="theme-color" content="#3b55c9">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="home" data-title-key="nav.home">
+<div id="app-header"></div>
+
+<main>
+  <div class="container">
+    <section class="hero">
+      <div>
+        <span class="pill"><i data-icon="plane"></i><span data-i18n="home.badge"></span></span>
+        <h1><span data-i18n="home.h1a"></span><em data-i18n="home.h1b"></em></h1>
+        <p class="lead" data-i18n="home.lead"></p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="flights.html"><i data-icon="plane"></i><span data-i18n="home.explore"></span></a>
+          <a class="btn btn-outline" href="services.html"><i data-icon="grid"></i><span data-i18n="home.services"></span></a>
+        </div>
+        <div class="trust">
+          <div class="trust-item"><span class="trust-ico"><i data-icon="circle-check"></i></span><div><b data-i18n="trust.secure"></b><span data-i18n="trust.secure.d"></span></div></div>
+          <div class="trust-item"><span class="trust-ico"><i data-icon="circle-check"></i></span><div><b data-i18n="trust.price"></b><span data-i18n="trust.price.d"></span></div></div>
+          <div class="trust-item"><span class="trust-ico"><i data-icon="circle-check"></i></span><div><b data-i18n="trust.support"></b><span data-i18n="trust.support.d"></span></div></div>
+        </div>
+      </div>
+      <div class="hero-img"><img src="assets/plane.jpg" alt="Airplane at the gate" fetchpriority="high"></div>
+    </section>
+
+    <div class="search-wrap" id="search"></div>
+
+    <section class="section">
+      <div class="route-card">
+        <div class="info">
+          <span class="pill soft dot" data-i18n="home.route.tag"></span>
+          <h3 data-i18n="home.route.h"></h3>
+          <div class="route-line"><span>CGK</span><span class="dash"><i data-icon="plane"></i></span><span>JED</span></div>
+          <p style="color:var(--muted);font-size:1.05rem;margin-bottom:26px" data-i18n="home.route.p"></p>
+          <a class="btn btn-primary" href="flights.html"><span data-i18n="home.route.btn"></span><i data-icon="arrow-right"></i></a>
+        </div>
+        <img src="assets/wing.jpg" alt="Wing over the clouds" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <span class="pill soft dot" data-i18n="home.air.tag"></span>
+        <h2 data-i18n="home.air.h"></h2>
+        <p data-i18n="home.air.p"></p>
+      </div>
+      <div class="airline-grid" id="airlineGrid"></div>
+    </section>
+  </div>
+</main>
+
+<div id="app-footer"></div>
+<script src="assets/i18n.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/home.js"></script>
+</body>
+</html>

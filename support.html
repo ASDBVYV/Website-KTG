@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kamil Ticket Global</title>
+<meta name="description" content="Book Jakarta (CGK) to Jeddah (JED) flights with Saudia, Garuda Indonesia and Lion Air — Kamil Ticket Globalindo.">
+<meta name="theme-color" content="#3b55c9">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="support" data-title-key="nav.support">
+<div id="app-header"></div>
+
+<main>
+  <section class="page-hero short">
+    <div class="container">
+      <div class="copy">
+        <span class="pill soft dot" data-i18n="sup.tag"></span>
+        <h1><span data-i18n="sup.h1a"></span><em data-i18n="sup.h1b"></em></h1>
+        <p data-i18n="sup.lead"></p>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <section class="section" style="padding-top:60px">
+      <div class="chan-grid">
+        <div class="chan"><span class="ico-circle"><i data-icon="chat"></i></span><h3 data-i18n="sup.wa"></h3><p data-i18n="sup.wa.p"></p><a class="link" id="waLink" target="_blank" rel="noopener"></a></div>
+        <div class="chan"><span class="ico-circle"><i data-icon="mail"></i></span><h3 data-i18n="sup.mail"></h3><p data-i18n="sup.mail.p"></p><a class="link" id="mailLink"></a></div>
+        <div class="chan"><span class="ico-circle"><i data-icon="phone"></i></span><h3 data-i18n="sup.phone"></h3><p data-i18n="sup.phone.p"></p><a class="link" id="telLink"></a></div>
+      </div>
+    </section>
+    <section class="section" id="faq">
+      <div class="support-grid">
+        <div class="faq">
+          <h2 style="font-size:2rem;color:var(--navy);margin-bottom:24px" data-i18n="sup.faq.h"></h2>
+          <details><summary><span data-i18n="sup.q1"></span><i data-icon="down"></i></summary><div class="ans" data-i18n="sup.a1"></div></details>
+          <details><summary><span data-i18n="sup.q2"></span><i data-icon="down"></i></summary><div class="ans" data-i18n="sup.a2"></div></details>
+          <details><summary><span data-i18n="sup.q3"></span><i data-icon="down"></i></summary><div class="ans" data-i18n="sup.a3"></div></details>
+          <details><summary><span data-i18n="sup.q4"></span><i data-icon="down"></i></summary><div class="ans" data-i18n="sup.a4"></div></details>
+          <details><summary><span data-i18n="sup.q5"></span><i data-icon="down"></i></summary><div class="ans" data-i18n="sup.a5"></div></details>
+          <details><summary><span data-i18n="sup.q6"></span><i data-icon="down"></i></summary><div class="ans" data-i18n="sup.a6"></div></details>
+          <details><summary><span data-i18n="sup.q7"></span><i data-icon="down"></i></summary><div class="ans" data-i18n="sup.a7"></div></details>
+        </div>
+        <form class="form-card" id="contact" novalidate>
+          <h3 data-i18n="sup.form.h"></h3><p data-i18n="sup.form.p"></p>
+          <div class="alert error" id="cErr" hidden><i data-icon="info"></i><span data-i18n="sup.f.err"></span></div>
+          <div class="field"><label for="cName" data-i18n="sup.f.name"></label><div class="input"><input id="cName" autocomplete="name"></div></div>
+          <div class="field"><label for="cEmail" data-i18n="sup.f.email"></label><div class="input"><input id="cEmail" type="email" autocomplete="email"></div></div>
+          <div class="field"><label for="cTopic" data-i18n="sup.f.topic"></label><div class="input"><select id="cTopic">
+            <option value="booking" data-i18n="sup.t.booking"></option><option value="payment" data-i18n="sup.t.payment"></option><option value="change" data-i18n="sup.t.change"></option><option value="group" data-i18n="sup.t.group"></option><option value="other" data-i18n="sup.t.other"></option></select></div></div>
+          <div class="field"><label for="cMsg" data-i18n="sup.f.msg"></label><div class="input area"><textarea id="cMsg"></textarea></div></div>
+          <button class="btn btn-primary btn-block" type="submit"><i data-icon="mail"></i><span data-i18n="sup.f.send"></span></button>
+        </form>
+      </div>
+    </section>
+  </div>
+</main>
+
+<div id="app-footer"></div>
+<script src="assets/i18n.js"></script>
+<script src="assets/core.js"></script>
+<script src="assets/support.js"></script>
+</body>
+</html>
